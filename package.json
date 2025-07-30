@@ -6,7 +6,7 @@
   "publisher": "veliessa",
   "author": {
     "name": "Aman Kumar",
-    "email": "",
+    "email": "veliessa@proton.me",
     "url": "https://www.linkedin.com/in/theamanone"
   },
   "repository": {
@@ -20,9 +20,7 @@
     "Programming Languages",
     "Other"
   ],
-  "activationEvents": [
-    "onLanguage:v"
-  ],
+
   "main": "./out/extension.js",
   "contributes": {
     "languages": [
