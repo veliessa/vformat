@@ -2,8 +2,9 @@
   "name": "vformat",
   "displayName": "Veliessa .v Files",
   "description": "Adds file icon and basic support for .v files under the Veliessa brand",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "veliessa",
+  "icon": "icons/images/veliessa-logo.png",
   "author": {
     "name": "Aman Kumar",
     "email": "veliessa@proton.me",
