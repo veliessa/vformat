@@ -1,0 +1,13 @@
+{
+  "fileExtensions": {
+    "v": "veliessa-logo"
+  },
+  "fileNames": {
+    ".v": "veliessa-logo"
+  },
+  "iconDefinitions": {
+    "veliessa-logo": {
+      "iconPath": "./images/veliessa-logo.png"
+    }
+  }
+}

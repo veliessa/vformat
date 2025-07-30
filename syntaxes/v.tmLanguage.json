@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Veliessa",
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.veliessa",
+          "match": "//.*$"
+        },
+        {
+          "name": "comment.block.veliessa",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.veliessa",
+          "match": "\\b(if|else|for|while|return|function|var|let|const)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.veliessa",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.veliessa",
+          "match": "\\\\[\\'\\\"\\\\/bfnrt]"
+        }
+      ]
+    },
+    "numbers": {
+      "name": "constant.numeric.veliessa",
+      "match": "\\b[0-9]+\\b"
+    }
+  },
+  "scopeName": "source.v"
+}

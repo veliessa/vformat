@@ -1,0 +1,70 @@
+{
+  "name": "vformat",
+  "displayName": "Veliessa .v Files",
+  "description": "Adds file icon and basic support for .v files under the Veliessa brand",
+  "version": "0.1.0",
+  "publisher": "veliessa",
+  "author": {
+    "name": "Aman Kumar",
+    "email": "",
+    "url": "https://www.linkedin.com/in/theamanone"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/veliessa/vformat.git"
+  },
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:v"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "v",
+        "aliases": ["Veliessa", "v"],
+        "extensions": [".v"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "v",
+        "scopeName": "source.v",
+        "path": "./syntaxes/v.tmLanguage.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "veliessa-v-files",
+        "label": "Veliessa .v Files",
+        "path": "./icons/file-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.102.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "typescript": "^5.8.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
